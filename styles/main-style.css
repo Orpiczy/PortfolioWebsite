@@ -1,0 +1,39 @@
+main {
+    margin: 0 2rem;
+    display: grid;
+    grid-template: 1fr / 10fr 10fr 1fr;
+    grid-template-areas: "info photo side-nav";
+    width: 100%;
+}
+
+#info-container {
+    grid-area: info;
+}
+
+#name-and-surname {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+#name-and-surname h2 {
+    padding-bottom: 5%;
+}
+
+.distinctive-text {
+    color: var(--complementary-color);
+}
+
+.icon-list {
+    color: white;
+}
+#portfolio-picture {
+    grid-area: photo;
+    display: block;
+    height: auto;
+    max-width: 100%;
+
+}
+
+#side-menu {
+    grid-area: side-nav;
+    background-color: aqua;
+}
