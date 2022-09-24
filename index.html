@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
 
     <!-- Links -->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/index-html-style.css">
     <script src="./scripts/scripts.js" defer></script>
 
 </head>
@@ -28,13 +28,13 @@
 <body>
     <header>
         <!-- Navigation -->
-        <div class="inner-width">
-            <h1 class="logo">Portfolio</h1>
-            <nav class="navigation-menu">
-                <a href="#" class="regular_btn">About</a>
-                <a href="#" class="regular_btn">Portfolio</a>
-                <a href="#" class="regular_btn">Contact</a>
-                <a href="#" class="distinctive_btn">Get Started</a>
+        <div id="navigation-container">
+            <h1 id="logo">Portfolio</h1>
+            <nav id="navigation-menu">
+                <a href="./about.html" class="regular_btn">About</a>
+                <a href="./portfolio.html" class="regular_btn">Portfolio</a>
+                <a href="./contact.html" class="regular_btn">Contact</a>
+                <a href="./index.html" class="distinctive_btn">Get Started</a>
             </nav>
         </div>
     </header>
@@ -55,16 +55,17 @@
                     <a href="#"><img src="/images/icon-linkedin.svg"></a>
                     <a href="#"><img src="/images/icon-git.svg"></a>
                     <a href="#"><img src="/images/icon-pinterest.svg"></a>
+                    <a href="#"><img src="/images/icon-mail.svg"></a>
                 </div>
             </div>
             <div id="interaction-buttons-container">
-                <a href="#" class="distinctive_btn">Hire me</a>
-                <a href="#" class="regular_btn">Portfolio</a>
+                <a href="./contact.html" class="distinctive_btn">Hire me</a>
+                <a href="./portfolio.html" class="regular_btn">Portfolio</a>
             </div>
 
         </div>
         <img id="portfolio-picture" src="./images/placeholder-main-profile-photo.svg"
-            alt="Lukasz Orpik professionally looking picture">
+            alt="Professionally looking picture of Lukasz Orpik, Enginner to Hire">
         <nav id="breadcrumbs">
             <a href="#">01</a>
             <a href="#">02</a>
@@ -79,7 +80,6 @@
         <div class="circles-grid" id="top-g"></div>
         <div class="circles-grid" id="middle-g"></div>
         <div class="circles-grid" id="bottom-g"></div>
-        <!-- <div class="circles-grid" id="small-g"></div> -->
     </div>
 
 </body>

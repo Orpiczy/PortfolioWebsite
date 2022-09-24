@@ -1,0 +1,94 @@
+main {
+    margin: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.greetings {
+    text-align: center;
+}
+
+.greetings h2 {
+    font-size: 2rem;
+}
+
+.greetings h2+h2 {
+    margin-bottom: 1%;
+}
+
+#contact-form {
+    display: grid;
+    
+    grid-template: 1fr 1fr 4fr 1fr/ repeat(2, 1fr);
+    grid-template-areas:
+        "name    email"
+        "phone   salary"
+        "message message"
+        "submit submit";
+
+    gap: 15px 10px;
+    margin: 30px 60px;
+
+}
+
+input,textarea {
+    padding-left: 5px;
+    color: var(--background-color);
+}
+
+input#name {
+    grid-area: name;
+}
+
+input#email {
+    grid-area: email;
+}
+
+input#phone {
+    grid-area: phone;
+}
+
+input#salary {
+    grid-area: salary;
+}
+
+textarea#message {
+    grid-area: message;
+}
+
+input#submit {
+    grid-area: submit;
+    border-radius: 2rem;
+    margin: auto;
+    /* padding: 0 4rem; */
+    font-size: 1.1rem; 
+    border-style: none;
+    padding: 12px 40px;
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 780px) {
+
+    main {
+        margin-top: 5rem;
+    }
+    #contact-form {
+        display: grid;
+    
+        grid-template: repeat(4,1fr) 2fr 2fr 1fr / 1fr;
+        grid-template-areas:
+            "name"
+            "email"
+            "phone"   
+            "salary"
+            "message"
+             "message"
+            "submit";
+    
+        gap: 15px 10px;
+        margin: 30px 2px;
+    
+    }
+}

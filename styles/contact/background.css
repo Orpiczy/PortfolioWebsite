@@ -1,0 +1,9 @@
+
+@import url("../universal/background.css");
+
+#top-r{
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 150px;
+}

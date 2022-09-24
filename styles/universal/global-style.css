@@ -10,11 +10,13 @@ body {
     background: var(--background-color);
 }
 
+.distinctive-text {
+    color: var(--complementary-color);
+}
 
-a.regular_btn {
+.regular_btn {
     display: inline-flex;
     align-items: center;
-    margin-left: 10px;
     color: #ddd;
     text-transform: uppercase;
     font-size: 14px;
@@ -23,16 +25,15 @@ a.regular_btn {
     transition: .3s linear;
 }
 
-a.regular_btn:hover {
+.regular_btn:hover {
     background: var(--complementary-color);
     color: #fff;
     transform: scale(1.05);
 }
 
-a.distinctive_btn {
+.distinctive_btn {
     display: inline-flex;
     align-items: center;
-    margin-left: 10px;
     color: #ddd;
     text-transform: uppercase;
     font-size: 14px;
@@ -45,9 +46,9 @@ a.distinctive_btn {
     letter-spacing: 2px;
 }
 
-a.distinctive_btn:hover {
+.distinctive_btn:hover {
     background: #fff;
-    color: var(--backgroud-color);
+    color: var(--background-color);
     font-weight: 500;
     letter-spacing: 2px;
     transform: scale(1.05);

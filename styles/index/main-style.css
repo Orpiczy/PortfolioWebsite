@@ -1,5 +1,5 @@
 main {
-    margin: 5rem 3rem;
+    margin: 150px 3rem 150px 3rem;
     display: grid;
     justify-items: space-around;
     align-items: center;
@@ -26,13 +26,9 @@ main {
     margin-bottom: 1rem;
 }
 
-.distinctive-text {
-    color: var(--complementary-color);
-}
-
 #icon-container {
     margin: 0.5rem 0;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -42,10 +38,14 @@ main {
 }
 
 #interaction-buttons-container {
-    margin: 2% 0;
+    margin-top: 2%;
     height: 3.5rem;
     display: flex;
     align-items: stretch;
+}
+
+#interaction-buttons-container a+a {
+    margin-left: 10px;
 }
 
 #interaction-buttons-container a {
@@ -78,4 +78,25 @@ main {
 
 #breadcrumbs a:hover {
     filter: none;
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        grid-template: repeat(2,1fr) / 1fr;
+        grid-template-areas:
+            "info"
+            "photo";
+        align-items: stretch;
+        row-gap: 10px;
+        justify-items: stretch;
+    }
+
+    #portfolio-picture {
+        margin: auto;
+        margin-top: 0;
+    }
+
+    #breadcrumbs {
+        display: none;
+    }
 }
