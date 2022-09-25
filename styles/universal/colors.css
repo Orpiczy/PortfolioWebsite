@@ -1,6 +1,20 @@
-:root {
+:root,
+:root.light {
+    --dark-background-color: #E8D4D1;
+    --background-color: #FFEDE6;
+    --background-circle-color: #fff;
+    --complementary-color: #E8D1DC;
+    --text-color: #0e0c38;
+    --border-color: #0e0c38;
+    --regular-btn-background: #E8D4D1;
+}
+
+:root.dark {
     --dark-background-color: #040221;
     --background-color: #0e0c38;
     --background-circle-color: #0f1241;
     --complementary-color: #ff0513;
+    --text-color: #fff;
+    --border-color: #fff;
+    --regular-btn-background: ;
 }

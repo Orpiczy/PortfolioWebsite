@@ -1,9 +1,20 @@
-
 @import url("../universal/background.css");
 
-#top-r{
-    top: 90px;
+#top-r {
+    top: 95px;
     left: 3rem;
     width: 250px;
     height: 2px;
+}
+
+@media only screen and (max-width: 690px) {
+    #top-r {
+        top: 65px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #top-r {
+        display: none;
+    }
 }

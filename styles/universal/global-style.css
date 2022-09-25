@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
@@ -17,7 +17,8 @@ body {
 .regular_btn {
     display: inline-flex;
     align-items: center;
-    color: #ddd;
+    color: var(--text-color);
+    background: var(--regular-btn-background);
     text-transform: uppercase;
     font-size: 14px;
     padding: 12px 20px;
@@ -27,27 +28,26 @@ body {
 
 .regular_btn:hover {
     background: var(--complementary-color);
-    color: #fff;
     transform: scale(1.05);
 }
 
 .distinctive_btn {
     display: inline-flex;
     align-items: center;
-    color: #ddd;
+    color: var(--text-color);
     text-transform: uppercase;
     font-size: 14px;
     padding: 12px 20px;
     border-radius: 4px;
     transition: .3s linear;
     background: var(--complementary-color);
-    color: #fff;
+    color: var(--text-color);
     font-weight: 500;
     letter-spacing: 2px;
 }
 
 .distinctive_btn:hover {
-    background: #fff;
+    background: var(--text-color);
     color: var(--background-color);
     font-weight: 500;
     letter-spacing: 2px;

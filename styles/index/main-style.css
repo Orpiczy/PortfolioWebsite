@@ -33,8 +33,9 @@ main {
     justify-content: space-between;
 }
 
-.icon-list {
-    color: white;
+#icon-container a {
+    padding: 5px;
+    margin: 0 2px;
 }
 
 #interaction-buttons-container {

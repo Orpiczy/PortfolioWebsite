@@ -35,7 +35,7 @@ main {
 #projects-container .project-tile {
     background: var(--background-circle-color);
     border-radius: 20px;
-    border: 1px solid #fff;
+    border: 1px solid var(--border-color);
 }
 
 @media only screen and (max-width: 1100px) {

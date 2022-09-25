@@ -10,22 +10,34 @@ header {
   align-items: stretch;
 }
 
+#logo-and-theme-container {
+  display: flex;
+  align-items: flex-end;
+}
+
 #logo {
   display: flex;
   align-items: flex-end;
-  color: #fff;
+  color: var(--text-color);
   min-height: 90px;
 }
 
+#theme-switch {
+  display: block;
+  min-width: 3rem;
+  padding: 0;
+  margin-left: 10px;
+}
 
 #navigation-menu {
   display: flex;
   align-items: stretch;
-  min-height: 90px;
+  min-height: 45px;
 }
 
 #navigation-menu a {
   align-items: flex-end;
+  margin: 0 2px;
 }
 
 @media only screen and (max-width: 690px) {
@@ -45,12 +57,16 @@ header {
   }
 
   #logo {
+    display: flex;
     margin: 5px 0;
-    display: inline;
     text-align: center;
   }
 
   #navigation-menu {
     flex-direction: column;
+  }
+
+  #logo-and-theme-container {
+    justify-content: center;
   }
 }
